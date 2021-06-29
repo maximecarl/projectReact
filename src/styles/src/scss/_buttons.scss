@@ -1,0 +1,57 @@
+button {
+    cursor: pointer;
+}
+
+button[class^="cta"], a[class^="cta"], input[type=submit] {
+    border: 0;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+
+.cta-primary {
+    background-color: $primary;
+
+    &:hover {
+        background-color: $primaryTransparent;
+        border: 2px solid $primary;
+        color: $primary;
+    }
+}
+.cta-secondary {
+    background-color: $secondary;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 2px solid $secondary;
+        color: $secondary;
+    }
+}
+
+.cta-grey {
+    background-color: rgb(95, 88, 90);
+
+    &:hover {
+        background-color: rgb(212, 207, 209);
+        border: 2px solid rgb(95, 84, 88);
+        color: rgb(95, 84, 88);
+    }
+}
+
+.quickSearchButton {
+    padding: 10px 10px 10px 20px !important;
+    
+    input {
+        border: 0;
+        min-width: 200px;
+        margin-left: 10px;
+        padding: 5px 10px;
+        border-radius: 20px;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+}

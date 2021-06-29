@@ -1,0 +1,55 @@
+header {
+    width: 100%;
+    background-color: $background;
+    color: white;
+    padding: 10px;
+
+    div {
+        display: flex;
+        max-width: 1200px;
+        margin: auto;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+    
+            li {
+                list-style: none;
+                padding: 10px 25px;
+                cursor: pointer;
+                border: 2px solid transparent;
+                transition: 0.5s;
+                margin: 0 15px;
+
+                &:hover {
+                    border-bottom: 2px solid white;
+                }
+
+                &.selected {
+                    border-bottom: 2px solid $primary;
+                }
+    
+                &:last-child {
+                    background-color: white;
+                    color: $background;
+                    border-radius: 50px;
+
+                    &:hover {
+                        background-color: transparent;
+                        backdrop-filter: blur(2px);
+                        color: white;
+                        border: 2px solid white;
+                    }
+
+                    &.selected {
+                        background-color: $primary;
+                        border: 2px solid $primary;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.compareWithPokemonContainer {
+    width: 100%;
+    text-align: center;
+
+    .compareWithPokemonButtonContainer {
+
+        button {
+            background-position: center;
+            background-size: cover;
+            background-repeat: none;
+            border: 0;
+            width: 100px;
+            height: 100px;
+            background-color: $primary;
+            color: white;
+            font-size: 30px;
+            border-radius: 50%;
+        }
+    }
+
+
+    .compareWithPokemonResultContainer {
+        display: flex;
+        justify-content: center;
+
+        .compareWithPokemonResultMatchingValue {
+            padding: 20px;
+            padding-right: 10px;
+            font-size: 30px;
+            background-color: $primary;
+            color: white;
+            margin: auto 0;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+
+        .compareWithPokemonRaison {
+            h2 {
+                margin: 0;
+                font-size: 20px;
+            }
+
+            text-align: left;
+            padding: 20px;
+            margin: auto 0;
+            background-color: $greyLight;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+    }
+}
